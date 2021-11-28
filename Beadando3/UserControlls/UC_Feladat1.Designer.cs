@@ -39,6 +39,7 @@ namespace Beadando3.UserControlls
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnCount = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblCounter = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -85,7 +86,7 @@ namespace Beadando3.UserControlls
             // 
             this.lblWordCounter.AutoSize = true;
             this.lblWordCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblWordCounter.Location = new System.Drawing.Point(19, 673);
+            this.lblWordCounter.Location = new System.Drawing.Point(19, 690);
             this.lblWordCounter.Name = "lblWordCounter";
             this.lblWordCounter.Size = new System.Drawing.Size(57, 18);
             this.lblWordCounter.TabIndex = 4;
@@ -95,7 +96,7 @@ namespace Beadando3.UserControlls
             // 
             this.lblCharCounter.AutoSize = true;
             this.lblCharCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCharCounter.Location = new System.Drawing.Point(19, 649);
+            this.lblCharCounter.Location = new System.Drawing.Point(19, 659);
             this.lblCharCounter.Name = "lblCharCounter";
             this.lblCharCounter.Size = new System.Drawing.Size(198, 18);
             this.lblCharCounter.TabIndex = 5;
@@ -116,17 +117,29 @@ namespace Beadando3.UserControlls
             this.btnCount.TabIndex = 7;
             this.btnCount.Text = "Count";
             this.btnCount.UseVisualStyleBackColor = true;
+            this.btnCount.Click += new System.EventHandler(this.btnCount_Click);
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // lblCounter
+            // 
+            this.lblCounter.AutoSize = true;
+            this.lblCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCounter.Location = new System.Drawing.Point(19, 721);
+            this.lblCounter.Name = "lblCounter";
+            this.lblCounter.Size = new System.Drawing.Size(276, 18);
+            this.lblCounter.TabIndex = 8;
+            this.lblCounter.Text = "Number of times when # appears in text: ";
+            // 
             // UC_Feladat1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.lblCounter);
             this.Controls.Add(this.btnCount);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblCharCounter);
@@ -153,5 +166,6 @@ namespace Beadando3.UserControlls
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnCount;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblCounter;
     }
 }

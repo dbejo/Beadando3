@@ -86,6 +86,38 @@ namespace Beadando3.UserControlls
            
             lblCharCounterSpaces.Text = "Characters (with spaces): " +  lettercount.ToString();
             lblCharCounter.Text = "Characters (without spaces): " + lettercountwoutspaces.ToString();
+
+            string[] source = content.Split(new char[] { '.', '?', '!', ' ', ';', ':', ',' }, StringSplitOptions.RemoveEmptyEntries);
+
+            var wordcount = from word in source select word;
+
+            lblWordCounter.Text = "Words: " + wordcount.Count();
+
+        }
+
+        private void btnCount_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                char letter = char.Parse(textBox1.Text);
+                int count = 0;
+
+                foreach (var c in content)
+                {
+                    if (c == letter)
+                    {
+                        count++;
+                    }
+                }
+
+                lblCounter.Text = "Number of times when " + letter + " appears in the text: " + count.ToString();
+
+            }
+            catch
+            {
+                MessageBox.Show("Please write only one character!", "Error", MessageBoxButtons.OK);
+            }
+            
         }
     }
 }
