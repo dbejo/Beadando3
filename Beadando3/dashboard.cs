@@ -16,5 +16,17 @@ namespace Beadando3
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            uC_Feladat11.Visible = true;
+            uC_Feladat21.Visible = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            uC_Feladat11.Visible = false;
+            uC_Feladat21.Visible = true;
+        }
     }
 }

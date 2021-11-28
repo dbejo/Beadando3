@@ -30,6 +30,9 @@ namespace Beadando3
         private void InitializeComponent()
         {
             this.uC_Feladat11 = new Beadando3.UserControlls.UC_Feladat1();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.uC_Feladat21 = new Beadando3.UserControlls.UC_Feladat2();
             this.SuspendLayout();
             // 
             // uC_Feladat11
@@ -40,11 +43,42 @@ namespace Beadando3
             this.uC_Feladat11.Size = new System.Drawing.Size(800, 800);
             this.uC_Feladat11.TabIndex = 0;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(13, 13);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "1. Feladat";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(13, 43);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "2. Feladat";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // uC_Feladat21
+            // 
+            this.uC_Feladat21.BackColor = System.Drawing.Color.White;
+            this.uC_Feladat21.Location = new System.Drawing.Point(182, 1);
+            this.uC_Feladat21.Name = "uC_Feladat21";
+            this.uC_Feladat21.Size = new System.Drawing.Size(800, 800);
+            this.uC_Feladat21.TabIndex = 3;
+            // 
             // dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 801);
+            this.Controls.Add(this.uC_Feladat21);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.uC_Feladat11);
             this.Name = "dashboard";
             this.Text = "Form1";
@@ -55,6 +89,9 @@ namespace Beadando3
         #endregion
 
         private UserControlls.UC_Feladat1 uC_Feladat11;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private UserControlls.UC_Feladat2 uC_Feladat21;
     }
 }
 
