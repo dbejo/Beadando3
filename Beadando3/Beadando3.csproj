@@ -66,6 +66,12 @@
     <Compile Include="UserControlls\UC_Feladat2.Designer.cs">
       <DependentUpon>UC_Feladat2.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlls\UC_Welcome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlls\UC_Welcome.Designer.cs">
+      <DependentUpon>UC_Welcome.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlls\UC_Feladat2.resx">
       <DependentUpon>UC_Feladat2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlls\UC_Welcome.resx">
+      <DependentUpon>UC_Welcome.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

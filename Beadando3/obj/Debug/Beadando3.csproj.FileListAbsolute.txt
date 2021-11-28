@@ -10,3 +10,4 @@ C:\Users\36302\source\repos\Beadando3\Beadando3\obj\Debug\Beadando3.csproj.CoreC
 C:\Users\36302\source\repos\Beadando3\Beadando3\obj\Debug\Beadando3.exe
 C:\Users\36302\source\repos\Beadando3\Beadando3\obj\Debug\Beadando3.pdb
 C:\Users\36302\source\repos\Beadando3\Beadando3\obj\Debug\Beadando3.csproj.AssemblyReference.cache
+C:\Users\36302\source\repos\Beadando3\Beadando3\obj\Debug\Beadando3.UserControlls.UC_Welcome.resources
